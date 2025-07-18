@@ -16,7 +16,12 @@
                     <i class="fa-solid fa-clock"></i> Làm mới
                 </button>
                 <button class="btn btn-sm btn-success" @click="goToAddContact">
-                    <i class="fas fa-plus"></i> Thêm mới
+                    <router-link :to="{
+                        name: 'contact.add',
+                    }">
+                        <i class="fas fa-plus text-white"></i>
+                        <span class="text-white">Thêm mới</span>
+                    </router-link>
                 </button>
                 <button class="btn btn-sm btn-danger" @click="removeAllContacts">
                     <i class="fa-solid fa-trash-can"></i> Xóa tất cả
